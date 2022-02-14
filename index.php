@@ -1,7 +1,7 @@
 <?php
 
 $paragraph="Don't try this at home";
-$badWord="home";
+$badWord=$_GET["word"];;
 $length_1 = strlen($paragraph);
 $newParagraph = str_replace($badWord, "***", $paragraph);
 $length_2 = strlen($newParagraph);
